@@ -1,0 +1,146 @@
+body{
+  background: #1abc9c;
+  font-family: sans-serif;
+}
+.background_square{display: none;}
+
+.link_share_box{
+
+}
+.link_share_box input{
+  width: 400px;
+}
+.link_share_box input, .link_share_box button, .link_share_box span{
+  display: block;
+  margin: 10px auto ;
+  text-align: center;
+}
+
+
+.link_share{
+
+  background-color: #3F51B5;
+  cursor: pointer;
+  padding-top: 50px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  position: relative;
+  padding: 12px 30px;
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  will-change: box-shadow,transform;
+
+
+}
+
+.qna_list{
+  position: relative;
+
+  width: 500px;
+  height: 500px;
+  margin: 0 auto 100px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+
+.log_out{
+  text-align: center;
+  margin: 100px auto;
+  width: 200px;
+  font-size: 20px;
+}
+
+.label_answer {
+  background-color: #3e59bd
+}
+
+label[for=label-1]{
+
+}
+
+
+.my_qna_list{
+  position: relative;
+  margin: 0 auto;
+  width: 500px;
+  height: 500px;
+  overflow: scroll;
+  overflow-x: hidden;
+}
+
+h1{
+  color: #fff;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 100;
+}
+
+.steps{
+  width: 300px;
+  position: relative;
+  left: 0px;
+  right: 0px;
+  margin: 0px auto;
+}
+
+input[type=checkbox] {
+  display: none;
+}
+
+label{
+  background: #34495E;
+
+  width: 100%;
+  display: block;
+  border-bottom: 1px solid #2C3E50;
+  color: #fff;
+  text-transform: capitalize;
+  font-weight: 900;
+  font-size: 11px;
+  letter-spacing: 1px;
+  word-break: break-all;
+  transition: all 0.7s ease;
+  position: relative;
+  padding: 5px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+}
+
+label a {
+  color: #fff;
+  font-size: 12px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+label h2 span{
+  display: block;
+  font-size: 12px;
+  text-transform: capitalize;
+  font-weight: normal;
+  color: #bdc3c7;
+}
+
+label textarea {
+  width: 100%;
+}
+label[for=label-2]{
+  display: none;
+}
+
+#label-1:checked ~ label[for=label-1],
+#label-2:checked ~ label[for=label-2]{
+  background: #2C3E50;
+  border-bottom: 1px solid #fff;
+  color: #1ABC9C;
+}
+
+#label-1:checked ~ label[for=label-1] h2 span,
+#label-2:checked ~ label[for=label-2] h2 span{
+  color: #1ABC9C;
+}
