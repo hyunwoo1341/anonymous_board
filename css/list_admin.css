@@ -4,9 +4,6 @@ body{
 }
 .background_square{display: none;}
 
-.link_share_box{
-
-}
 .link_share_box input{
   width: 400px;
 }
@@ -38,7 +35,6 @@ body{
 
 .qna_list{
   position: relative;
-
   width: 500px;
   height: 500px;
   margin: 0 auto 100px;
@@ -57,11 +53,6 @@ body{
 .label_answer {
   background-color: #3e59bd
 }
-
-label[for=label-1]{
-
-}
-
 
 .my_qna_list{
   position: relative;
