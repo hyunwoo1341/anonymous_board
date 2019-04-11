@@ -3,6 +3,13 @@ document.qna_box.qna.value="";
 $(".answer_box textarea").val("");
 
 //사이드바 클릭
+$(".side_listBar .home").click(function(){
+	var hostUrl = window.location.hostname;
+	console.log(hostUrl);
+	window.location.href = "logout.php";
+
+});
+
 $(".side_listBar .top").click(function(){
 	$('html, body').animate({ scrollTop: 0 }, 'fast');
 });
@@ -12,8 +19,6 @@ $(".side_listBar .bottom").click(function(){
 });
 
 
-
-//자바스크립트 실행되게 ㅇ
 var answer = $(".answer");
 var answer_box = $(".answer_box");
 
@@ -41,7 +46,7 @@ function check($form,select) {
 			qna_box.qna.focus();
 			return false;
 		}
-
+	alert('질문이 전송되었습니다. 상대방의 답변을 기다려주세요');
 	}
 
 //답변하기 빈칸 허용 안되게
@@ -51,5 +56,8 @@ function check($form,select) {
 				alert("빈칸을 채워 주세요");
 				return false;
 			}
+		alert('답변완료');
 	}
+	
+	
 }

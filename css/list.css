@@ -61,6 +61,7 @@ body{
 
 
 .log_out{
+
   text-align: center;
   margin: 100px auto;
   width: 200px;
@@ -93,6 +94,10 @@ h1{
   left: 0px;
   right: 0px;
   margin: 0px auto;
+}
+
+.card.card-signup{
+	display:none
 }
 
 input[type=checkbox] {

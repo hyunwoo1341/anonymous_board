@@ -32,6 +32,10 @@ $pdo = db_connect();
 
 <div class="side_listBar">
 	<ul>
+		<li class="home">
+			<i class="material-icons">home</i>
+			<p class="">홈</p>
+		</li>
 		<li class="top">
 			<i class="material-icons">expand_less</i>
 			<p class="">맨위로</p>
@@ -43,9 +47,9 @@ $pdo = db_connect();
 		</li>
 	</ul>
 </div>
-
+	
 <div class="log_out list">
-		<a href="logout.php">< 로그인</a>
+		<a href="logout.php">로그인</a>
 </div>
 
 
@@ -148,7 +152,10 @@ if(isset($_SESSION['userId']) && $_SESSION['userId'] === $_SERVER['QUERY_STRING'
 	/*본인페이지라면 질문하기 버튼 안보이게*/
 	echo "<script>
 		$('.container.qna').css('display','none');
+		$('.log_out').css('display','block');
 		$('.log_out.list a').html('로그아웃');
+		
+		$('.container.link').css('display','block')
 		</script>";
 
 	//질문한 리스트

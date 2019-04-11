@@ -9,7 +9,7 @@ ul,li{list-style: none;}
 .section.section-full-screen.section-signup{padding-top:30vh}
 .section.section-full-screen.section-signup.sign_up{padding-top:20vh}
 .input-group.id{padding-top: 30px;}
-.input-group.ps{padding-bottom: 30px; margin-top: -20px}
+.input-group.ps{ margin-top: -20px}
 
 .footer.text-center{margin: 0 0 5px;}
 .member_p{padding-top: 20px;}
@@ -48,16 +48,16 @@ p.find_p{padding-top: 30px;}
 .side_listBar ul li {color: #000; text-align: center; cursor: pointer;}
 
 form.list{height: 500px; overflow: scroll; word-break: break-all; overflow-x: hidden;}
-form.list .content{padding-top: 50px;}
+
 .input-group .input-group-addon{padding: 0px 20px 40px 12px}
 
 .section.section-full-screen.section-signup.list {padding: 150px;}
-.container.link {margin-top: 150px; width: 500px;}
+.container.link {margin-top: 150px; width: 500px; display:none;}
 
 .link_share_box{color: #000;}
 .share_ok{color: white;}
 
-.log_out.list{text-align: center; padding-top: 80px; font-size: 30px;}
+.log_out.list{display:none; text-align: center; padding-top: 80px; font-size: 30px;}
 .log_out.list a {color: #fff;}
 .container.qna {padding: 150px 0 0 0;}
 .container.qna_list {padding-top:150px;}

@@ -1,13 +1,9 @@
 //빈칸 있으면 제출 안됨
-//비밀번호 두개 일치 한지 안한지. -->
-alert("355");
 var click_check = false;
 var check_result = "";
 var p_class = "";
-
 var click_check_email = false;
 var email_check = "";
-
 
 function formChk(){
 

@@ -13,14 +13,14 @@
 	$stmh->bindValue(':qna',$_POST['qna'],PDO::PARAM_STR);
 	$stmh->bindValue(':id',$_POST['Id'],PDO::PARAM_STR);
 	$stmh->execute();
-
-	echo "<script>
-				alert('질문되었습니다. 상대방의 답변을 기다려주세요');
-				location.replace(list.php".$_POST['Id'].");
-				</script>";
+	$hostname=$_SERVER["HTTP_REFERER"];
+	// echo "<script>
+	// 			alert('질문되었습니다. 상대방의 답변을 기다려주세요');
+	// 			window.histroy.go(-1);
+	// 			</script>";
 
 	// $_SERVER["HTTP_REFERER"] 현재 페이지로 오기전 주소값.
-	// header('Location: ' . $_SERVER["HTTP_REFERER"] );
+	header('Location: ' . $_SERVER["HTTP_REFERER"] );
 	// window.location.href = "$_SERVER['HTTP_REFERER']";
 
 	}
@@ -42,11 +42,11 @@
 		$stmh = $pdo->prepare($sql);
 		$stmh->bindValue(':id',$_POST['answer_qna_id'],PDO::PARAM_STR);
 		$stmh->execute();
-		echo "<script>
-					alert('답변되었습니다.');
-					window.location = list.php".$_SESSION['id']."
-		      </script>";
-
+		// echo "<script>
+		// 			alert('답변되었습니다.');
+		// 			window.location = list.php".$_SESSION['id']."
+		//       </script>";
+		header('Location: ' . $_SERVER["HTTP_REFERER"] );
 	}
 	//거절하기 누를 시
 	if(isset($_SERVER['QUERY_STRING'])){
