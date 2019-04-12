@@ -4,27 +4,6 @@ include 'mydb.php';
 include "include/include_html.php";
 
 
-
-// //n분 뒤 세션 종료.
-// if(isset($_SESSION['last_action'])){
-//     $secondsInactive = time() - $_SESSION['last_action'];
-//
-//     $expireAfterSeconds = 1800;
-//     if($secondsInactive >= $expireAfterSeconds){
-//         session_unset();
-//         session_destroy();
-//     }
-//
-// }
-// $_SESSION['last_action'] = time();
-
-//세션 없을 시 다시 로그인 페이지로.
-// if(!isset($_SESSION['userId'])){
-// 	header("Location:"."index.php");
-// 	exit();
-// }
-
-
 $pdo = db_connect();
 ?>
 
@@ -121,6 +100,7 @@ $stmh->execute();
               ?>
 
             <div class="content">
+				<span style="opacity:0.5; margin-left:15px"><?=$row["date"]?></span>
               <div class="input-group id">
                 <span class="input-group-addon">
                   <i class="material-icons">face</i>
@@ -133,6 +113,7 @@ $stmh->execute();
                   <i class="material-icons">check</i>
                 </span>
                 <span><?=$row["answer"]?></span>
+				  
               </div>
             </div>
             <hr>
