@@ -7,8 +7,10 @@
 ![Alt text](./images/20190415_172946.png)
 
 
-회원가입 기능을 통해서 직접 링크를 공유할 수 있다.
 ![Alt text](./images/main_img.png)
+
+회원가입 기능을 통해서 직접 링크를 공유할 수 있다.
+
 
 http://hyunwoo.site/anonymous_board/list.php?hyunwoo1341 으로 질문해볼 수 있다.
 
